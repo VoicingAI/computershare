@@ -15,7 +15,7 @@ class Assistant:
         return {"messages": result}
 
 def safe_assistant():
-    system_prompt = open(os.path.join("SYSTEM PROMPTS","safe_llm", "v1.txt")).read()
+    system_prompt = open("SYSTEM PROMPTS/v1.txt").read()
 
     prompt_template = ChatPromptTemplate.from_messages(
         [

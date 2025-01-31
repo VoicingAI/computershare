@@ -45,7 +45,7 @@ class Assistant:
         return {"messages": result}
 
 def security_assistant():
-    system_prompt = open('/home/ubuntu/VoicingAI-pingone/SYSTEM PROMPTS/qa/qa_v1.txt').read()
+    system_prompt = open('SYSTEM PROMPTS/qa.txt').read()
     primary_assistant_prompt = ChatPromptTemplate.from_messages(
         [
             ("system", f"""{system_prompt}"""),

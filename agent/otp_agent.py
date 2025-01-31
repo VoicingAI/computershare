@@ -43,7 +43,7 @@ class Assistant:
         return {"messages": result}
 
 def otp_assistant():
-    system_prompt = open('/home/ubuntu/VoicingAI-pingone/SYSTEM PROMPTS/otp/otp_v1.txt').read()
+    system_prompt = open('SYSTEM PROMPTS/otp.txt').read()
     primary_assistant_prompt = ChatPromptTemplate.from_messages(
         [
             ("system", f"""{system_prompt}"""),

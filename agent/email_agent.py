@@ -46,7 +46,7 @@ def update_valid(state: VerifyEmailAssistant):
 
 
 def email_assistant():
-    system_prompt = open('/home/ubuntu/VoicingAI-pingone/SYSTEM PROMPTS/email/email_v1.txt').read()
+    system_prompt = open('SYSTEM PROMPTS/email.txt').read()
     primary_assistant_prompt = ChatPromptTemplate.from_messages(
         [
             ("system", f"""{system_prompt}"""),
